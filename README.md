@@ -36,7 +36,7 @@ By employing graph convolutions, we introduce next Graph Convolutional Neural Ne
 
 The convolved feature is a graph signal and it is subsequently passed through an activation function to obtain the *f*th convolutional layer output as
 
-<img src="images/gcnn_activation_function.png" width="350" height="80"  />
+<img src="images/gcnn_activation_function.png" width="300" height="60"  />
 
 
 <a name="ga"></a>
