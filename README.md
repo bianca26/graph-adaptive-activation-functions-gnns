@@ -42,7 +42,7 @@ The resulting output of the *l*th layer serves as the input to the next convolut
 
 In these experiments, we employ a distirbuted GCNN architecture, illustrated below. Specifically, the graph convolutionl filters are distributable, we employ activation functions that allow for a distributed implementation and we define the fully-connected layer *per-node*. The parameters of the latter are shared for all the nodes, so their number is independent of the graph size.
 
-<img src="images/architecture.png" width="800" height="200"  />
+<img src="images/architecture.png" width="800" height="170"  />
 
 
 <a name="ga"></a>
