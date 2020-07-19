@@ -28,6 +28,7 @@ Based on the GSO **S**, we can further define graph convolutions. These are grap
 
 <img src="images/graph_convolution.png" width="130" height="60" />
 
+where **h** = \[h<sub>1</sub>\]<sup>T</sup>
 
 <a name="ga"></a>
 ## 2. Graph-Adaptive Activation Functions
