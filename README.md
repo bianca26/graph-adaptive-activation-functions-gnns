@@ -32,7 +32,7 @@ where **h** = \[h<sub>0</sub>, ..., h<sub>K</sub>\]<sup>T</sup> is a vector of c
 
 By employing graph convolutions, we introduce next Graph Convolutional Neural Networks (GCNNs). These are composed of L convolutional layers. Each convolutional layer consists of two fundamental elements: a linear and a nonlinear component. The linear component comprises a collection of graph filters to perform graph convolutions. Specifically, at layer *l*, the GCNN takes as input F<sub>l-1</sub> features {**x**<sub>l-1</sub><sup>g</sup>}<sub>g=1</sub><sup>F<sub>l-1</sub></sup> from layer *l-1* and produces F<sub>l</sub> output features {**x**<sub>l</sub><sup>f</sup>}<sub>f=1</sub><sup>F<sub>l</sub></sup>. Each input feature **x**<sub>l-1</sub><sup>g</sup> is processed by a parallel bank of F<sub>l</sub> graph filters **H**<sub>l</sub><sup>fg</sup>(**S**). The filter outputs are aggregated over the input index *g* to yield the *f*th convolved feature as 
 
-<img src="images/gcnn_convolved_feature.png" />
+<img src="images/gcnn_convolved_feature.png" width="130" height="60"  />
 
 <a name="ga"></a>
 ## 2. Graph-Adaptive Activation Functions
