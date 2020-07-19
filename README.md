@@ -59,5 +59,5 @@ The following functionalities are taken from Fernando Gama's Graph Neural Networ
 
 More information regarding the GNN library can be found [here](https://github.com/alelab-upenn/graph-neural-networks).
 
-## Dependencies
+### Dependencies
 The following packages are required: `numpy`, `pickle`, `os`, `datetime`, `scipy`, `torch`, `copy`, `math`, `hdf5storage`.
