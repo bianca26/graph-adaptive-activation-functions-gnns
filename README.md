@@ -51,4 +51,13 @@ A unique characteristic that graph data encompass is the coupling between the da
 
 <a name="code"></a>
 ## 3. Code
+The code is written in Python 3. The neural network models are defined and trained using the PyTorch framework.
 
+The following functionalities are taken from Fernando Gama's Graph Neural Networks library (that can be found https://github.com/alelab-upenn/graph-neural-networks):
+* The definition of the GNN architecture, the utilities for working with the model, the definition of the loss function, the training functionality: `Modules/architecture.py`, `Modules/model.py`, `Modules/loss.py`, `Modules/train.py`, respetively.
+* Part of the data tools functionality, the graph tools and machine learning functionality, as well as miscellaneous and visual tools: `Utils/dataTools.py`, `Utils/graphTools.py`, `Utils/graphML.py`, `Utils/miscTools.py`, `Utils/visualTools.py`, respetively.
+
+More information regarding the GNN library can be found [here](https://github.com/alelab-upenn/graph-neural-networks).
+
+##Dependencies
+The following packages are required: `numpy`, `pickle`, `os`, `datetime`, `scipy`, `torch`, `copy`, `math`, `hdf5storage`.
