@@ -16,10 +16,11 @@ Bianca Iancu, and Elvin Isufi, "Towards Finite-Time Consensus with Graph Convolu
 <a name="intro"></a>
 ## 1. Introduction
 
-We consider data represented on a graph with N nodes and M edges. Associated to the graph is the shift operator (GSO) matrix **S**, whose sparsity pattern matches the graph structure. Commonly used GSOs include the adjacency matrix, the graph Laplacian, and their normalized and translated forms.
+We consider data represented on a graph with N nodes and M edges. On the vertices of the graph, we define a graph signal **x** whose *i*th component is the value at node *i* in the graph. We consider applications where graph signals are processed in a *distributed* fashion. A typical example is in sensor networks without access to a centralized processing unit and where each sensor communicates only with its neighbor sensors. 
 
-On the vertices of the graph, we define a graph signal **x** whose *i*th component is the value at node *i* in the graph. We consider applications where graph signals are processed in a *distributed* fashion. A typical example is in sensor networks without access to a centralized processing unit and where each sensor communicates only with its neighbor sensors. 
+Associated to the graph is the shift operator (GSO) matrix **S**, whose sparsity pattern matches the graph structure. That is, **S**  has non-zero values only for the entries associated to edges in the graph. Commonly used GSOs include the adjacency matrix, the graph Laplacian, and their normalized and translated forms. The choice for the GSO varies depending on the application, and different choices have different trade-offs. For our experiments, we employ the adjacency matrix as the GSO. The main operation carried out by the GSO is the shifting of a graph signal **x** over the graph, that is
 
+[shift](images/shift.png)
 
 <a name="ga"></a>
 ## 2. Graph-Adaptive Activation Functions
