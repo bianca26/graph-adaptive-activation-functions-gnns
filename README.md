@@ -26,7 +26,7 @@ where **x**<sup>(1)</sup> is the signal shifted once by the GSO **S**. Specifica
 
 Based on the GSO **S**, we can further define graph convolutions. These are graph filters that can be written as a polynomial of the GSO **S** as
 
-<img src="images/graph_convolution.png"/>
+<img src="images/graph_convolution.png" width="130" height="60" />
 
 
 <a name="ga"></a>
