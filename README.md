@@ -34,7 +34,7 @@ By employing graph convolutions, we introduce next Graph Convolutional Neural Ne
 
 <img src="images/gcnn_convolved_feature.png" width="450" height="80"  />
 
-The convolved feature is a graph signal and it is subsequently passed through an activation function to obtain the *f*th convolutional layer output as
+The convolved feature is a graph signal and it is subsequently passed through the nonlinear component of the GCNN, namely an activation function, to obtain the *f*th convolutional layer output as
 
 <img src="images/gcnn_activation_function.png" width="250" height="50"  />
 
@@ -44,6 +44,7 @@ In these experiments, we employ a distirbuted GCNN architecture, illustrated bel
 
 <img src="images/architecture.png" width="800" height="170"  />
 
+A unique characteristic that graph data encompass is the coupling between the data and the underlying graph structure on which these data are defined. In the current literature, this coupling is only captured in the linear GCNN component. However, activation functions are crucial in learning nonlinear relations in the data. We argue that it is essential to capture the data-graph topology coupling in the GCNN nonlinear component as well. To address this, we propose a new family of activation functions, which adapt to the graph structure, capture the data-graph topology coupling in the neighborhood of a node, and allow for a distributed implementation.
 
 <a name="ga"></a>
 ## 2. Graph-Adaptive Activation Functions
