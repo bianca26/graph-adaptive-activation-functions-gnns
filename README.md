@@ -20,7 +20,7 @@ We consider data represented on a graph with N nodes and M edges. On the vertice
 
 Associated to the graph is the shift operator (GSO) matrix **S**, whose sparsity pattern matches the graph structure. That is, **S**  has non-zero values only for the entries associated to edges in the graph. Commonly used GSOs include the adjacency matrix, the graph Laplacian, and their normalized and translated forms. The choice for the GSO varies depending on the application, and different choices have different trade-offs. For our experiments, we employ the adjacency matrix as the GSO. The main operation carried out by the GSO is the shifting of a graph signal **x** over the graph, that is
 
-<img src="images/shift.png" width="180" height="80" />
+<img src="images/shift.png" width="110" height="50" />
 
 <a name="ga"></a>
 ## 2. Graph-Adaptive Activation Functions
