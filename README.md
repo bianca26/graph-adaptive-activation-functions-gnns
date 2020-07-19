@@ -22,6 +22,13 @@ Associated to the graph is the shift operator (GSO) matrix **S**, whose sparsity
 
 <img src="images/shift.png" width="130" height="60" />
 
+where **x**<sup>(1)</sup> is the signal shifted once by the GSO **S**. Specifically, the shifting operation results in neighboring nodes exchanging information and each node aggregating the incoming information from its one-hop neighbors. An essential property of the GSO is its readily distributed implementation, as the shifting operation only employs information that is locally available at each node.
+
+Based on the GSO **S**, we can further define graph convolutions. These are graph filters that can be written as a polynomial of the GSO **S** as
+
+<img src="images/graph_convolution.png"/>
+
+
 <a name="ga"></a>
 ## 2. Graph-Adaptive Activation Functions
 
