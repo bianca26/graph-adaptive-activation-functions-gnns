@@ -22,7 +22,7 @@ Associated to the graph is the shift operator (GSO) matrix **S**, whose sparsity
 
 ![shift](images/shift.png =100x20)
 
-<img src="images/shift.png" width="300" height="80" />
+<img src="images/shift.png" width="200" height="100" />
 
 <a name="ga"></a>
 ## 2. Graph-Adaptive Activation Functions
