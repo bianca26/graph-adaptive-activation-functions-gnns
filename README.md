@@ -1,7 +1,7 @@
 # Graph-Adaptive Activation Functions for Graph Neural Networks
 This is a PyTorch implementation of graph-adaptive activation functions for Graph Neural Networks (GNNs). For any questions or suggestions, please e-mail Bianca Iancu at <bianca.iancu026@gmail.com> or Elvin Isufi at <E.Isufi-1@tudelft.nl>.
 
-Parts of this code are taken verbatim from the GNNs library implemented by Fernano Gama, available [here](https://github.com/alelab-upenn/graph-neural-networks).
+Parts of this code are taken verbatim from the GNNs library implemented by Fernando Gama, available [here](https://github.com/alelab-upenn/graph-neural-networks).
 
 When using part of this code, please cite the following paper
 
