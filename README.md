@@ -9,6 +9,8 @@ Other paper on GNNs by the authors is
 
 Bianca Iancu, and Elvin Isufi, "Towards Finite-Time Consensus with Graph Convolutional Neural Networks". *28th European Signal Processing Conference (EUSIPCO 2020)*, IEEE, January 18-22, 2021.
 
+Parts of this code are taken verbatim from the GNNs library implemented by Fernano Gama, available [here](https://github.com/alelab-upenn/graph-neural-networks).
+
 1. [Introduction](#intro)
 2. [Graph-Adaptive Activation Functions](#ga)
 3. [Code](#code)
