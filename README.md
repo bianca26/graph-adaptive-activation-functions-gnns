@@ -57,9 +57,24 @@ The graph-adaptive localized activation functions are implemented in terms of a 
 
 In the case of the graph-adaptive kernel activation functions, we replace the nonlinear operator with a kernel function to enrich the representation power. The kernel function is applied within the one-hop neighborhood of each node as well.
 
-Concretely, at layer *l*, the graph-adaptive activation functions map the linear features z<sub>l</sub><sup>f</sup> to the output features x<sub>l</sub><sup>f</sup> following the recursion
+Concretely, at layer *l*, the graph-adaptive activation functions map the linear features z<sub>l</sub><sup>f</sup> to the output features x<sub>l</sub><sup>f</sup> following the recursion below, where *f(.,.)* represent the nonlinear operator or the kernel function
 
 <img src="images/graph_adaptive_activation_function.png" width="450" height="80"  />
+
+Important to note in the recursion above is the fact that the nonlinear aggregation is applied on the one-hop neighborhoods of each node, however, the shifted signal is considered. Therefore, while applied locally, the graph-adaptive nonlinearities can account for information incoming from arbitrarily large neighborhoods. Thus, they account for the data-graph topology coupling in the GCNN nonlinear component, while also allowing for a distributed implementation. 
+
+An example of how the graph-adaptive nonlinearities are applied in a graph is shown in the figure below. The activation function is applied for the node originally depicted in red. At each step, we initially shift the graph signal on the graph and then apply the nonlinear operation in the one-hop neighborhood of the considered node. Thus, while only aggregating locally available information, we account for the signal at further away neighbors.
+
+<img src="images/example_GA_activation.png" width="700" height="200"  />
+
+### Permutation Equivariance
+
+An essential property of GCNNs that we account for when designing the graph-adaptive activation functions is permutation equivariance. This implies that processing graph signals with GCNNs is independent of the node labeling. Moreover, this property guarantees the GCNN's ability to exploit internal graph symmetries to generalize the learned representation to different graph signals that share some of these symmetries. 
+
+An example of the permutaton equivariance property is depicted in the figure below. We show a graph with eight nodes and a signal defined on top of it, where different colors represent different signal values. The nodes in the graph are labeled with integer values from one to eight. The graph signals depicted in *(a)* and *(b)* are different signals defined on the same graph, but they are permutations of each other: interchange inner and outer square in *(b)* and rotate the graph 180&deg; /[cf. *(c)* /]. We now observe the same signals in *(a)* and *(c)*. The permutation equivariance property guarantees that a GCNN would be able to classify the signal in *(b)* by only seeing examples as in *(a)* during training.
+
+<img src="images/permutation_equivariance.png" width="700" height="200"  />
+
 
 <a name="code"></a>
 ## 3. Code
