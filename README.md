@@ -55,6 +55,12 @@ The graph-adaptive localized activation functions are implemented in terms of a 
 
 <img src="images/max_median_operators.png" width="700" height="200"  />
 
+In the case of the graph-adaptive kernel activation functions, we replace the nonlinear operator with a kernel function to enrich the representation power. The kernel function is applied within the one-hop neighborhood of each node as well.
+
+Concretely, at layer *l*, the graph-adaptive activation functions map the linear features z<sub>l</sub><sup>f</sup> to the output features x<sub>l</sub><sup>f</sup> following the recursion
+
+<img src="images/graph_adaptive_activation_function.png" width="130" height="60" />
+
 <a name="code"></a>
 ## 3. Code
 The code is written in Python 3. The neural network models are defined and trained using the PyTorch framework.
