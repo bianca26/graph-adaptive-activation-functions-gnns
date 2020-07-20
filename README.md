@@ -53,7 +53,7 @@ We propose a family of activation functions for GNNs that account for the data-g
 
 The graph-adaptive localized activation functions are implemented in terms of a nonlinear operator, employed within the one-hop neighborhood of each node. Specifically, we employ the max and median operators. These are illustrated in the figure below, where they act on the one-hop neighborhood of the node shown in red and aggregate the values of the *k*th shifted signal for this node. In *(a)* we show the max operator and in *(b)* the median operator.
 
-<img src="images/architecture.png" width="800" height="170"  />
+<img src="images/max_median_operators.png" width="800" height="170"  />
 
 <a name="code"></a>
 ## 3. Code
