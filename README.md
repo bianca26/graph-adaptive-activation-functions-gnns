@@ -61,3 +61,8 @@ More information regarding the GNN library can be found [here](https://github.co
 
 ### Dependencies
 The following packages are required: `numpy`, `pickle`, `os`, `datetime`, `scipy`, `torch`, `copy`, `math`, `hdf5storage`.
+
+### Experiments Code
+* `Generate SBM Graph.ipynb`: generates and saves the Stochastic Block Model (SBM) graph used for experiments, based on user-defined parameters.
+* `Source Localization.ipynb`: implements the distributed Source Localization experiment. Additional details are provided in the notebook.
+* `Finite Time Consensus.ipynb`: implements the distributed Finite-Time Consensus experiment. Additional details are provided in the notebook.
