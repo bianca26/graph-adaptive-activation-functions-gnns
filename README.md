@@ -49,6 +49,12 @@ A unique characteristic that graph data encompass is the coupling between the da
 <a name="ga"></a>
 ## 2. Graph-Adaptive Activation Functions
 
+We propose a family of activation functions for GNNs that account for the data-graph topology coupling, while also being distributable. Specifically, we define them similarly to graph convolutions. This allows capturing information from neighborhoods or arbitrary size, while the nonlinear aggregation is locally applied within one-hop neighborhoods. The resulting nonlinear features are combined with a set of trainable parameters to weigh the information at different neighborhood resolutions accordingly. The resolution radius is a user-defined parameter and allows the GNN to adapt to the task at hand. We define two new types of activation functions, namely *graph-adaptive localized activation functions* and *graph-adaptive kernel activation functions*. 
+
+The graph-adaptive localized activation functions are implemented in terms of a nonlinear operator, employed within the one-hop neighborhood of each node. Specifically, we employ the max and median operators. These are illustrated in the figure below, where they act on the one-hop neighborhood of the node shown in red and aggregate the values of the *k*th shifted signal for this node. In *(a)* we show the max operator and in *(b)* the median operator.
+
+<img src="images/architecture.png" width="800" height="170"  />
+
 <a name="code"></a>
 ## 3. Code
 The code is written in Python 3. The neural network models are defined and trained using the PyTorch framework.
