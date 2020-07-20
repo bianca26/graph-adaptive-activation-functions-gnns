@@ -65,7 +65,7 @@ Important to note in the recursion above is the fact that the nonlinear aggregat
 
 An example of how the graph-adaptive nonlinearities are applied in a graph is shown in the figure below. The activation function is applied for the node originally depicted in red. At each step, we initially shift the graph signal on the graph and then apply the nonlinear operation in the one-hop neighborhood of the considered node. Thus, while only aggregating locally available information, we account for the signal at further away neighbors.
 
-<img src="images/example_GA_activation.png" width="700" height="200"  />
+<img src="images/example_GA_activation.png" width="650" height="170"  />
 
 ### Permutation Equivariance
 
@@ -73,7 +73,7 @@ An essential property of GCNNs that we account for when designing the graph-adap
 
 An example of the permutaton equivariance property is depicted in the figure below. We show a graph with eight nodes and a signal defined on top of it, where different colors represent different signal values. The nodes in the graph are labeled with integer values from one to eight. The graph signals depicted in *(a)* and *(b)* are different signals defined on the same graph, but they are permutations of each other: interchange inner and outer square in *(b)* and rotate the graph 180&deg; /[cf. *(c)* /]. We now observe the same signals in *(a)* and *(c)*. The permutation equivariance property guarantees that a GCNN would be able to classify the signal in *(b)* by only seeing examples as in *(a)* during training.
 
-<img src="images/permutation_equivariance.png" width="700" height="200"  />
+<img src="images/permutation_equivariance.png" width="650" height="180"  />
 
 
 <a name="code"></a>
